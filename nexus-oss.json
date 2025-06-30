@@ -1,8 +1,8 @@
 {
   "name": "nexus-oss",
   "plugin_schema": "2",
-  "release": "13.1-RELEASE",
-  "artifact": "https://github.com/rebasing-xyz/iocage-nexus-oss.git",
+  "release": "13.4-RELEASE",
+  "artifact": "https://github.com/norkfolkuncertainty/iocage-nexus-oss.git",
   "official": false,
   "properties": {
     "nat": 1,
