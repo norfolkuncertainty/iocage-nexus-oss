@@ -30,9 +30,9 @@ cd /home/${USER} && tar -xzvf ${BIN_NAME}
 rm -rfv ${BIN_NAME}
 
 # replace the nexus.vmoptions and nexus files
-fetch -o /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus https://raw.githubusercontent.com/norkfolkuncertainty/iocage-nexus-oss/main/bin/nexus
-fetch -o /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus.vmoptions https://raw.githubusercontent.com/norkfolkuncertainty/iocage-nexus-oss/main/bin/nexus.vmoptions
-fetch -o /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus-rc.sh https://raw.githubusercontent.com/norkfolkuncertainty/iocage-nexus-oss/main/bin/nexus-rc.sh
+fetch -o /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus https://raw.githubusercontent.com/norfolkuncertainty/iocage-nexus-oss/main/bin/nexus
+fetch -o /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus.vmoptions https://raw.githubusercontent.com/norfolkuncertainty/iocage-nexus-oss/main/bin/nexus.vmoptions
+fetch -o /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus-rc.sh https://raw.githubusercontent.com/norfolkuncertainty/iocage-nexus-oss/main/bin/nexus-rc.sh
 
 echo "Applying execution permission on /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus \n"
 chmod +x /home/${USER}/nexus-${NEXUS_VERSION}/bin/nexus
@@ -72,7 +72,7 @@ admin_pwd=$(cat /home/${USER}/sonatype-work/nexus3/admin.password)
 
 ##########################################################
 # Save info on PLUGIN_INFO
-echo "Nexus OSS Plugin. For more info please visit https://github.com/norkfolkuncertainty/iocage-nexus-oss.git" >> /root/PLUGIN_INFO
+echo "Nexus OSS Plugin. For more info please visit https://github.com/norfolkuncertainty/iocage-nexus-oss.git" >> /root/PLUGIN_INFO
 echo "To access the Console use the default credentials: " >> /root/PLUGIN_INFO
 echo "Nexus username: admin " >> /root/PLUGIN_INFO
 echo "Nexus password: ${admin_pwd}" >> /root/PLUGIN_INFO

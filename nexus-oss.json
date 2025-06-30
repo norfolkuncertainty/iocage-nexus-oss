@@ -2,14 +2,14 @@
   "name": "nexus-oss",
   "plugin_schema": "2",
   "release": "13.4-RELEASE",
-  "artifact": "https://github.com/norkfolkuncertainty/iocage-nexus-oss.git",
+  "artifact": "https://github.com/norfolkuncertainty/iocage-nexus-oss.git",
   "official": false,
   "properties": {
     "nat": 1,
     "nat_forwards": "tcp(8081:8081)"
   },
   "pkgs": [
-    "openjdk8"
+    "openjdk17"
   ],
   "packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
   "fingerprints": {
