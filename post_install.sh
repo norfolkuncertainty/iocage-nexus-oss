@@ -23,7 +23,7 @@ pw add user -n ${USER} -c NexusOSS -s /bin/sh -m
 
 ##########################################################
 # Download and install Nexus
-fetch -o /home/${USER}/${BIN_NAME} https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-unix-x86-64-${NEXUS_VERSION}-unix.tar.gz
+fetch -o /home/${USER}/${BIN_NAME} https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-unix-x86-64-${NEXUS_VERSION}.tar.gz
 cd /home/${USER} && tar -xzvf ${BIN_NAME}
 
 # remove the binary to save space
